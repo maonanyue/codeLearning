@@ -1,2 +1,2 @@
-# nodejsLearning
-small node.js script
+# code learning
+ shell script, javascript, python,ruby etc.

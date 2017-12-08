@@ -1,0 +1,15 @@
+{
+  "name": "ntools",
+  "version": "1.0.0",
+  "description": "handy tools using nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "weizongshang",
+  "license": "ISC",
+  "dependencies": {
+    "mkdirp": "^0.5.1",
+    "xlsx": "^0.11.12"
+  }
+}

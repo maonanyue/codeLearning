@@ -3,11 +3,16 @@ var readline = require('readline'),
 
 
 function hex2string( data ){
-    let b = data.split(',')
-    let buffer = new Buffer(b.length)
-    let i = 0
-    b.forEach( function(v){ buffer.writeUInt8( Number.parseInt(v, 16), i++ ) })
-    console.log(buffer.toString('utf-8'))
+    if(data.indexOf(',') > -1){
+        let b = data.split(',')
+        let buffer = new Buffer(b.length)
+        let i = 0
+        b.forEach( function(v){ buffer.writeUInt8( Number.parseInt(v, 16), i++ ) })
+        console.log(buffer.toString('utf-8'))
+    }else{
+        let buffer = Buffer.from(data, "hex")
+        console.log(buffer.toString('utf-8'))
+    }
 }
 
 
